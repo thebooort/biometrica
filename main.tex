@@ -1,0 +1,240 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{utopia} %font utopia imported
+\usepackage{graphicx}
+\usetheme{Copenhagen}
+\usecolortheme{dolphin}
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[Biométrica y privacidad] %optional
+{Biométrica}
+
+\subtitle{ Tu cuerpo amenaza tu privacidad}
+
+\author[Bartolomé Ortiz Viso] % (optional)
+{Bartolomé Ortiz Viso}
+
+\institute[VFU] % (optional)
+{
+  
+  Interferencias\\
+ \and
+  ETSIIT, Universidad de Granada
+}
+
+\date[12/05/2017] % (optional)
+{Jornadas JASyP, Mayo 2017}
+
+\logo{\includegraphics[height=1.5cm]{logo.jpg}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Contenido}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Contenido}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+\section{Sobre mí}
+
+%---------------------------------------------------------
+%Changing visivility of the text
+\begin{frame}
+\frametitle{¿Quién soy?}
+
+\begin{itemize}
+    \item<1-> Matemáticas (en particular matemática aplicada) \pause
+    \item<2-> Informática \pause
+    \item<3-> Derechos civiles / activismo \pause
+    \item<4-> Curiosidad \pause
+\end{itemize} 
+Ya se ha acabado la parte aburrida (LOL)
+\end{frame}
+
+%---------------------------------------------------------
+
+\section{Biométrica: Bases y conceptos}
+%---------------------------------------------------------
+%Example of the \pause command
+\begin{frame}
+\frametitle{¿Qué son los sistemas biométricos?}
+\textit{"Biometrics systems are designed to identify or verify the identity of people by using their intrinsic physical or behavioral characteristics. Biometric identifiers include fingerprints; iris, face and palm prints; gait; voice; and DNA, among others."}(\citeauthor{EFF}). 
+\begin{figure}
+\includegraphics[scale=0.8]{primer.jpeg}
+\centering
+\end{figure}
+\end{frame}
+%---------------------------------------------------------
+
+\begin{frame}
+\frametitle{Breve nota histórica}
+
+\begin{itemize}
+    \item<1-> Era utilizada en China (mínimo desde) siglo XIV (método de indentificación entre comerciantes).
+    \item<2->  Alphonse Bertillon, 1883, desarrolló el sistema antropométrico. (Identificación policial) 
+    \item<3-> L.Flom, A. Safir, J. Daugman , 1936-1994, Reconocimiento del Iris
+\end{itemize}
+\end{frame}
+
+
+%---------------------------------------------------------
+
+
+
+\begin{frame}
+\frametitle{¿Por qué usar sistemas biométricos?}
+\begin{itemize}
+    \item<1-> Necesidad de identificarse con precisión en internet y en la vida real 
+    \item<2->  En este aspecto, el clásico Usuario/Contraseña cada vez está en mayor decadencia (muchos servicios y poca memoria) 
+    \item<3-> Cumplimentar sistemas de identificación en varias etapas
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Ventajas}
+    \item<1-> No puedes olvidarte de ti mismo
+    \item<2-> Los datos biométricos son más difíciles de copiar que una contraseña o un PIN 
+    \item<3-> Es mucho mas difícil compartir información o lograr que otros tengan acceso a ella
+    \item<4-> Relativamente sencillo, cómodo y amigable
+    \item<5-> Permiten establecer o trazar un seguimiento mas sencillo y con menor coste
+\end{frame}
+\begin{frame}
+
+%---------------------------------------------------------
+
+\begin{frame}
+\frametitle{¿Qué sistemas se pueden ver en la actualidad?}
+\begin{itemize}
+    \item<1-> Huellas dactilares  
+    \item<2-> Reconocimiento facial
+    \item<3-> Reconocimiento de voz
+    \item<4-> Escáner de Iris/Retina
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Huellas dactilares}
+\begin{itemize}
+ \item<1-> Opticos, ultrasónicos o capacitivos
+\item<2->Usos: Servicios policiales y militares, acceso a instalaciones, acceso a teléfonos móviles, etc.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Reconocimiento facial}
+Objetivo principal: reconocimiento sin contacto.
+\begin{itemize}
+    \item<1-> 2D, 3D, analisis de textur facial y camaras térmicas 
+    \item<2-> Objetivo principal: reconocimiento sin contacto.
+    \item<3-> Usos: Vigilancia, servicios policiales y militares, farmaceuticas, etc
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Escáner de Iris y Retina}
+\begin{itemize}
+    \item<1-> Alto nivel de aleatoriedad en su estructura, el cual permite 266 grados de libertad que pueden ser codificados y una densidad de información de 3,4 bits por mm² de tejido
+    \item<2-> Captura de imagen y procesado
+    \item<3-> Ya puede usarse para vigilancia e identificación en empresas e insituciones de alta tecnología
+\end{itemize}
+\end{frame}
+
+
+\section{La mayor amenaza para nuestra privacidad}
+
+\frametitle{¿Ventajas?}
+    \item<1-> No puedes olvidarte de ti mismo 
+    \item<2-> Los datos biométricos son "más difíciles" de copiar que una contraseña o un PIN 
+    \item<3-> Es mucho "mas difícil" compartir información o lograr que otros tengan acceso a ella
+    \item<4-> Relativamente sencillo, cómodo y amigable
+    \item<5-> Permiten establecer o trazar un seguimiento mas sencillo y con menor coste 
+\end{frame}
+
+\begin{frame}
+\frametitle{¿Qué puede medir la biométrica en la actualidad?}
+
+\end{frame}
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Sample frame title}
+
+In this slide, some important text will be
+\alert{highlighted} beause it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. "Examples" is fixed as block title.
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Two-column slide}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+\section{¡Manos a la obra!}
+
+
+
+\end{document}
